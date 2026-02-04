@@ -1,0 +1,2180 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+        <link rel="next" href="../getting-started/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Home - Human Errors Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#uv-package-manager-tutorial-commands" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Human Errors Documentation" class="md-header__button md-logo" aria-label="Human Errors Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Human Errors Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Home
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Human Errors Documentation" class="md-nav__button md-logo" aria-label="Human Errors Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Human Errors Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-uv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why UV?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#install-uv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Install UV
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verify-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Verify Installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-start-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick Start Guide
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Quick Start Guide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-creating-a-new-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Creating a New Project
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-installing-packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Installing Packages
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-virtual-environments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Virtual Environments
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#essential-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Essential Commands
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Essential Commands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#package-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Package Management
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Package Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installing-packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installing Packages
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uninstalling-packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Uninstalling Packages
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listing-packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Listing Packages
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upgrading-packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Upgrading Packages
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#virtual-environment-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Virtual Environment Commands
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependency-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dependency Management
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dependency Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#generate-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Generate Requirements
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sync-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sync Environment
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Advanced Usage
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Advanced Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#working-with-pyprojecttoml" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Working with pyproject.toml
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compiling-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Compiling Requirements
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cache-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cache Management
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#command-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Command Reference
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Command Reference">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#global-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Global Commands
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pip-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        pip Commands
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#venv-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        venv Commands
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cache-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        cache Commands
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-workflows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Workflows
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Workflows">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#starting-a-new-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Starting a New Project
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cloning-an-existing-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cloning an Existing Project
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#managing-dependencies-with-compile-sync" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Managing Dependencies with Compile + Sync
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#development-vs-production-dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Development vs Production Dependencies
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tips &amp; Best Practices
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tips &amp; Best Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#speed-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Speed Optimization
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compatibility-with-pip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Compatibility with pip
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#environment-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Environment Variables
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-with-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using with Docker
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#migration-from-pip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Migration from pip
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comparison-with-other-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comparison with Other Tools
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#issue-command-not-found" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Issue: Command not found
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#issue-dependency-conflicts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Issue: Dependency conflicts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#issue-slow-downloads" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Issue: Slow downloads
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-reference-card" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick Reference Card
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Usage
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Usage
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Basic Usage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contributing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contributing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-uv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why UV?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#install-uv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Install UV
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verify-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Verify Installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-start-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick Start Guide
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Quick Start Guide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-creating-a-new-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Creating a New Project
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-installing-packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Installing Packages
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-virtual-environments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Virtual Environments
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#essential-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Essential Commands
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Essential Commands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#package-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Package Management
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Package Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installing-packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installing Packages
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uninstalling-packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Uninstalling Packages
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listing-packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Listing Packages
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upgrading-packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Upgrading Packages
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#virtual-environment-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Virtual Environment Commands
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependency-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dependency Management
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dependency Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#generate-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Generate Requirements
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sync-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sync Environment
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Advanced Usage
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Advanced Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#working-with-pyprojecttoml" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Working with pyproject.toml
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compiling-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Compiling Requirements
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cache-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cache Management
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#command-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Command Reference
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Command Reference">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#global-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Global Commands
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pip-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        pip Commands
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#venv-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        venv Commands
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cache-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        cache Commands
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-workflows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Workflows
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Workflows">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#starting-a-new-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Starting a New Project
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cloning-an-existing-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cloning an Existing Project
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#managing-dependencies-with-compile-sync" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Managing Dependencies with Compile + Sync
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#development-vs-production-dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Development vs Production Dependencies
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tips &amp; Best Practices
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tips &amp; Best Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#speed-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Speed Optimization
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compatibility-with-pip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Compatibility with pip
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#environment-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Environment Variables
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-with-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using with Docker
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#migration-from-pip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Migration from pip
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comparison-with-other-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comparison with Other Tools
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#issue-command-not-found" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Issue: Command not found
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#issue-dependency-conflicts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Issue: Dependency conflicts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#issue-slow-downloads" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Issue: Slow downloads
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-reference-card" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick Reference Card
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="uv-package-manager-tutorial-commands">UV Package Manager - Tutorial &amp; Commands</h1>
+<p>UV is a blazingly fast Python package and project manager written in Rust. It's designed as a drop-in replacement for pip, pip-tools, and virtualenv, but 10-100x faster.</p>
+<h2 id="why-uv">Why UV?</h2>
+<ul>
+<li><strong>Speed</strong>: 10-100x faster than pip</li>
+<li><strong>Unified tool</strong>: Replaces pip, pip-tools, virtualenv, and more</li>
+<li><strong>Reliable</strong>: Built in Rust with proper dependency resolution</li>
+<li><strong>Compatible</strong>: Works with existing Python projects and PyPI</li>
+</ul>
+<h2 id="installation">Installation</h2>
+<h3 id="install-uv">Install UV</h3>
+<pre><code class="language-bash"># Using pip
+pip install uv
+
+# Using curl (recommended for system-wide install)
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# Using homebrew (macOS)
+brew install uv
+</code></pre>
+<h3 id="verify-installation">Verify Installation</h3>
+<pre><code class="language-bash">uv --version
+</code></pre>
+<hr />
+<h2 id="quick-start-guide">Quick Start Guide</h2>
+<h3 id="1-creating-a-new-project">1. Creating a New Project</h3>
+<pre><code class="language-bash"># Create a new Python project
+uv init my-project
+cd my-project
+</code></pre>
+<p>This creates:</p>
+<ul>
+<li><code>pyproject.toml</code> - Project configuration</li>
+<li><code>.python-version</code> - Python version specification</li>
+<li>Basic project structure</li>
+</ul>
+<h3 id="2-installing-packages">2. Installing Packages</h3>
+<pre><code class="language-bash"># Install a package
+uv pip install requests
+
+# Install specific version
+uv pip install requests==2.31.0
+
+# Install multiple packages
+uv pip install requests pandas numpy
+
+# Install from requirements.txt
+uv pip install -r requirements.txt
+</code></pre>
+<h3 id="3-virtual-environments">3. Virtual Environments</h3>
+<pre><code class="language-bash"># Create a virtual environment
+uv venv
+
+# Create with specific Python version
+uv venv --python 3.11
+
+# Activate the environment
+# On macOS/Linux:
+source .venv/bin/activate
+
+# On Windows:
+.venv\\Scripts\\activate
+</code></pre>
+<hr />
+<h2 id="essential-commands">Essential Commands</h2>
+<h3 id="package-management">Package Management</h3>
+<h4 id="installing-packages">Installing Packages</h4>
+<pre><code class="language-bash"># Install package
+uv pip install &lt;package&gt;
+
+# Install with extras
+uv pip install &quot;fastapi[all]&quot;
+
+# Install editable package (development mode)
+uv pip install -e .
+
+# Install from git
+uv pip install git+https://github.com/user/repo.git
+
+# Install specific commit/branch/tag
+uv pip install git+https://github.com/user/repo.git@main
+uv pip install git+https://github.com/user/repo.git@v1.0.0
+</code></pre>
+<h4 id="uninstalling-packages">Uninstalling Packages</h4>
+<pre><code class="language-bash"># Uninstall a package
+uv pip uninstall requests
+
+# Uninstall multiple packages
+uv pip uninstall requests pandas numpy
+</code></pre>
+<h4 id="listing-packages">Listing Packages</h4>
+<pre><code class="language-bash"># List installed packages
+uv pip list
+
+# List in freeze format
+uv pip freeze
+
+# Show package details
+uv pip show requests
+</code></pre>
+<h4 id="upgrading-packages">Upgrading Packages</h4>
+<pre><code class="language-bash"># Upgrade a package
+uv pip install --upgrade requests
+
+# Upgrade all packages
+uv pip install --upgrade -r requirements.txt
+</code></pre>
+<h3 id="virtual-environment-commands">Virtual Environment Commands</h3>
+<pre><code class="language-bash"># Create virtual environment
+uv venv
+
+# Create with name
+uv venv myenv
+
+# Create with specific Python version
+uv venv --python 3.11
+uv venv --python 3.10.5
+
+# Create without pip
+uv venv --no-pip
+
+# Use system site packages
+uv venv --system-site-packages
+</code></pre>
+<h3 id="dependency-management">Dependency Management</h3>
+<h4 id="generate-requirements">Generate Requirements</h4>
+<pre><code class="language-bash"># Generate requirements.txt from current environment
+uv pip freeze &gt; requirements.txt
+
+# Compile requirements with locked versions
+uv pip compile requirements.in -o requirements.txt
+
+# Update locked requirements
+uv pip compile requirements.in -o requirements.txt --upgrade
+</code></pre>
+<h4 id="sync-environment">Sync Environment</h4>
+<pre><code class="language-bash"># Sync environment to match requirements.txt exactly
+uv pip sync requirements.txt
+
+# This uninstalls packages not in requirements.txt
+</code></pre>
+<hr />
+<h2 id="advanced-usage">Advanced Usage</h2>
+<h3 id="working-with-pyprojecttoml">Working with pyproject.toml</h3>
+<p>UV natively understands <code>pyproject.toml</code> for modern Python projects:</p>
+<pre><code class="language-toml">[project]
+name = &quot;my-project&quot;
+version = &quot;0.1.0&quot;
+requires-python = &quot;&gt;=3.10&quot;
+dependencies = [
+    &quot;requests&gt;=2.31.0&quot;,
+    &quot;pandas&gt;=2.0.0&quot;,
+]
+
+[project.optional-dependencies]
+dev = [
+    &quot;pytest&gt;=7.0&quot;,
+    &quot;black&gt;=23.0&quot;,
+    &quot;ruff&gt;=0.1.0&quot;,
+]
+</code></pre>
+<p>Install project dependencies:</p>
+<pre><code class="language-bash"># Install project dependencies
+uv pip install -e .
+
+# Install with dev dependencies
+uv pip install -e &quot;.[dev]&quot;
+</code></pre>
+<h3 id="compiling-requirements">Compiling Requirements</h3>
+<p><a href="http://requirements.in"><strong>requirements.in</strong></a> (high-level dependencies):</p>
+<pre><code>requests
+pandas&gt;=2.0
+flask
+</code></pre>
+<p>Compile to lock all transitive dependencies:</p>
+<pre><code class="language-bash"># Compile requirements.in to requirements.txt
+uv pip compile requirements.in -o requirements.txt
+
+# Upgrade packages during compilation
+uv pip compile requirements.in -o requirements.txt --upgrade
+
+# Compile for specific Python version
+uv pip compile requirements.in -o requirements.txt --python-version 3.11
+</code></pre>
+<h3 id="cache-management">Cache Management</h3>
+<pre><code class="language-bash"># Show cache directory
+uv cache dir
+
+# Clean cache
+uv cache clean
+
+# Show cache size
+du -sh $(uv cache dir)
+</code></pre>
+<hr />
+<h2 id="command-reference">Command Reference</h2>
+<h3 id="global-commands">Global Commands</h3>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>uv --version</code></td>
+<td>Show UV version</td>
+</tr>
+<tr>
+<td><code>uv --help</code></td>
+<td>Show help message</td>
+</tr>
+<tr>
+<td><code>uv self update</code></td>
+<td>Update UV to latest version</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pip-commands">pip Commands</h3>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>uv pip install &lt;pkg&gt;</code></td>
+<td>Install package</td>
+</tr>
+<tr>
+<td><code>uv pip uninstall &lt;pkg&gt;</code></td>
+<td>Uninstall package</td>
+</tr>
+<tr>
+<td><code>uv pip list</code></td>
+<td>List installed packages</td>
+</tr>
+<tr>
+<td><code>uv pip freeze</code></td>
+<td>Output installed packages in requirements format</td>
+</tr>
+<tr>
+<td><code>uv pip show &lt;pkg&gt;</code></td>
+<td>Show package information</td>
+</tr>
+<tr>
+<td><code>uv pip check</code></td>
+<td>Verify installed packages have compatible dependencies</td>
+</tr>
+<tr>
+<td><code>uv pip compile &lt;file&gt;</code></td>
+<td>Compile requirements file with locked versions</td>
+</tr>
+<tr>
+<td><code>uv pip sync &lt;file&gt;</code></td>
+<td>Sync environment to requirements file</td>
+</tr>
+</tbody>
+</table>
+<h3 id="venv-commands">venv Commands</h3>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>uv venv</code></td>
+<td>Create virtual environment</td>
+</tr>
+<tr>
+<td><code>uv venv &lt;name&gt;</code></td>
+<td>Create named virtual environment</td>
+</tr>
+<tr>
+<td><code>uv venv --python &lt;version&gt;</code></td>
+<td>Create with specific Python version</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cache-commands">cache Commands</h3>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>uv cache dir</code></td>
+<td>Show cache directory</td>
+</tr>
+<tr>
+<td><code>uv cache clean</code></td>
+<td>Clean cache</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="common-workflows">Common Workflows</h2>
+<h3 id="starting-a-new-project">Starting a New Project</h3>
+<pre><code class="language-bash"># 1. Create project directory
+mkdir my-project &amp;&amp; cd my-project
+
+# 2. Initialize project (optional)
+uv init
+
+# 3. Create virtual environment
+uv venv
+
+# 4. Activate virtual environment
+source .venv/bin/activate  # macOS/Linux
+# or
+.venv\\Scripts\\activate  # Windows
+
+# 5. Install dependencies
+uv pip install requests pandas numpy
+
+# 6. Freeze requirements
+uv pip freeze &gt; requirements.txt
+</code></pre>
+<h3 id="cloning-an-existing-project">Cloning an Existing Project</h3>
+<pre><code class="language-bash"># 1. Clone repository
+git clone https://github.com/user/project.git
+cd project
+
+# 2. Create virtual environment
+uv venv
+
+# 3. Activate environment
+source .venv/bin/activate
+
+# 4. Install dependencies
+uv pip install -r requirements.txt
+
+# 5. Install project in editable mode (if setup.py/pyproject.toml exists)
+uv pip install -e .
+</code></pre>
+<h3 id="managing-dependencies-with-compile-sync">Managing Dependencies with Compile + Sync</h3>
+<pre><code class="language-bash"># 1. Create requirements.in with high-level dependencies
+echo &quot;requests\npandas&gt;=2.0\nflask&quot; &gt; requirements.in
+
+# 2. Compile to lock versions
+uv pip compile requirements.in -o requirements.txt
+
+# 3. Sync environment
+uv pip sync requirements.txt
+
+# 4. To update dependencies later
+uv pip compile requirements.in -o requirements.txt --upgrade
+uv pip sync requirements.txt
+</code></pre>
+<h3 id="development-vs-production-dependencies">Development vs Production Dependencies</h3>
+<p><a href="http://requirements.in"><strong>requirements.in</strong></a>:</p>
+<pre><code>requests
+flask
+</code></pre>
+<p><a href="http://requirements-dev.in"><strong>requirements-dev.in</strong></a>:</p>
+<pre><code>-c requirements.txt
+pytest
+black
+ruff
+</code></pre>
+<p>Compile both:</p>
+<pre><code class="language-bash">uv pip compile requirements.in -o requirements.txt
+uv pip compile requirements-dev.in -o requirements-dev.txt
+</code></pre>
+<hr />
+<h2 id="tips-best-practices">Tips &amp; Best Practices</h2>
+<h3 id="speed-optimization">Speed Optimization</h3>
+<p>✅ <strong>UV is already optimized</strong>, but you can:</p>
+<ul>
+<li>Use <code>uv pip sync</code> instead of <code>uv pip install -r</code> when possible (faster)</li>
+<li>Leverage the cache - UV caches downloads automatically</li>
+<li>Use <code>--no-deps</code> flag to skip dependency resolution if you know dependencies are satisfied</li>
+</ul>
+<h3 id="compatibility-with-pip">Compatibility with pip</h3>
+<p>✅ <strong>Drop-in replacement</strong>: Most <code>pip</code> commands work with <code>uv pip</code></p>
+<pre><code class="language-bash"># These are equivalent:
+pip install requests
+uv pip install requests
+</code></pre>
+<h3 id="environment-variables">Environment Variables</h3>
+<pre><code class="language-bash"># Disable cache
+export UV_NO_CACHE=1
+
+# Custom cache directory
+export UV_CACHE_DIR=/path/to/cache
+
+# Set index URL
+export UV_INDEX_URL=https://custom-pypi.example.com/simple
+</code></pre>
+<h3 id="using-with-docker">Using with Docker</h3>
+<pre><code class="language-docker">FROM python:3.11-slim
+
+# Install UV
+RUN pip install uv
+
+# Copy requirements
+COPY requirements.txt .
+
+# Install dependencies with UV (much faster!)
+RUN uv pip install --system -r requirements.txt
+
+# Copy application
+COPY . .
+
+CMD [&quot;python&quot;, &quot;app.py&quot;]
+</code></pre>
+<h3 id="migration-from-pip">Migration from pip</h3>
+<p><strong>Before (pip)</strong>:</p>
+<pre><code class="language-bash">pip install -r requirements.txt
+pip freeze &gt; requirements.txt
+pip list
+</code></pre>
+<p><strong>After (UV)</strong>:</p>
+<pre><code class="language-bash">uv pip install -r requirements.txt
+uv pip freeze &gt; requirements.txt
+uv pip list
+</code></pre>
+<p>Just add <code>uv</code> before <code>pip</code>!</p>
+<hr />
+<h2 id="comparison-with-other-tools">Comparison with Other Tools</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>pip</th>
+<th>pip-tools</th>
+<th>poetry</th>
+<th>UV</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Speed</td>
+<td>Slow</td>
+<td>Slow</td>
+<td>Medium</td>
+<td><strong>Very Fast</strong></td>
+</tr>
+<tr>
+<td>Dependency resolution</td>
+<td>Basic</td>
+<td>Good</td>
+<td>Excellent</td>
+<td>Excellent</td>
+</tr>
+<tr>
+<td>Lock files</td>
+<td>❌</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Virtual env management</td>
+<td>❌</td>
+<td>❌</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Project scaffolding</td>
+<td>❌</td>
+<td>❌</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>PyPI compatible</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="troubleshooting">Troubleshooting</h2>
+<h3 id="issue-command-not-found">Issue: Command not found</h3>
+<pre><code class="language-bash"># Ensure UV is in PATH
+export PATH=&quot;$HOME/.cargo/bin:$PATH&quot;
+
+# Or reinstall
+pip install --upgrade uv
+</code></pre>
+<h3 id="issue-dependency-conflicts">Issue: Dependency conflicts</h3>
+<pre><code class="language-bash"># Check for conflicts
+uv pip check
+
+# Use compile to see dependency tree
+uv pip compile requirements.in --verbose
+</code></pre>
+<h3 id="issue-slow-downloads">Issue: Slow downloads</h3>
+<pre><code class="language-bash"># Use a mirror
+uv pip install --index-url https://pypi.tuna.tsinghua.edu.cn/simple requests
+
+# Or set permanently
+export UV_INDEX_URL=https://pypi.tuna.tsinghua.edu.cn/simple
+</code></pre>
+<hr />
+<h2 id="resources">Resources</h2>
+<ul>
+<li><strong>Official docs</strong>: <a href="https://github.com/astral-sh/uv">https://github.com/astral-sh/uv</a></li>
+<li><strong>PyPI page</strong>: <a href="https://pypi.org/project/uv/">https://pypi.org/project/uv/</a></li>
+<li><strong>Astral (creators)</strong>: <a href="https://astral.sh/">https://astral.sh/</a></li>
+</ul>
+<hr />
+<h2 id="quick-reference-card">Quick Reference Card</h2>
+<pre><code class="language-bash"># Installation
+pip install uv
+
+# Virtual environment
+uv venv                          # Create
+source .venv/bin/activate       # Activate (Unix)
+.venv\\Scripts\\activate          # Activate (Windows)
+
+# Install packages
+uv pip install &lt;package&gt;         # Install
+uv pip install -r requirements.txt  # From file
+uv pip install -e .              # Editable mode
+
+# Manage dependencies
+uv pip list                      # List packages
+uv pip freeze &gt; requirements.txt # Save requirements
+uv pip compile requirements.in   # Lock dependencies
+uv pip sync requirements.txt     # Sync environment
+
+# Update
+uv pip install --upgrade &lt;pkg&gt;   # Upgrade package
+uv self update                   # Update UV itself
+
+# Cache
+uv cache clean                   # Clear cache
+uv cache dir                     # Show cache location
+</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

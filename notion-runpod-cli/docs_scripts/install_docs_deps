@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "Installing documentation dependencies..."
+uv pip install -e ".[docs]"
+echo ""
+echo "Dependencies installed!"

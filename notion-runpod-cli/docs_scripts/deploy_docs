@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "Deploying documentation to GitHub Pages..."
+uv run --extra docs mkdocs gh-deploy --force
+echo ""
+echo "Deployment complete!"

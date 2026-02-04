@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "Building MkDocs documentation..."
+uv run --extra docs mkdocs build
+echo ""
+echo "Build complete! Check the 'site' folder."

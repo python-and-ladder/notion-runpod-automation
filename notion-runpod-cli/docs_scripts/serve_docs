@@ -1,0 +1,3 @@
+#!/bin/bash
+echo "Starting MkDocs development server..."
+uv run --extra docs mkdocs serve
