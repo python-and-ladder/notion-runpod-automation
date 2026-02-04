@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "Running main.py..."
+uv run main.py
+echo ""
+echo "Run complete!"
