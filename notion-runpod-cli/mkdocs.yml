@@ -1,7 +1,7 @@
 site_name: Human Errors Documentation
 nav:
   - Home: uv_tutorial.md
-  - Getting Started: getting-started.md
+  - Getting Started: Notion.md
   - Usage:
       - Basic Usage: usage.md
       - API Reference: api-reference.md
