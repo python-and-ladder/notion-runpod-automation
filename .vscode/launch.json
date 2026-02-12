@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: Run notion-runpod-cli main",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/notion-runpod-cli/main.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}/notion-runpod-cli",
+      "python": "${workspaceFolder}/notion-runpod-cli/.venv/bin/python",
+      "justMyCode": true,
+      "env": {}
+    }
+  ]
+}

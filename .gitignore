@@ -1,0 +1,6 @@
+notion-runpod-cli/.venv
+notion-runpod-cli/site
+notion-runpod-cli/build
+notion-runpod-cli/dist
+notion-runpod-cli/notion-runpod-cli.egg-info
+notion-runpod-cli/notion-runpod-cli.egg-info
