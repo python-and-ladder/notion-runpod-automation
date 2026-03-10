@@ -1,13 +1,11 @@
 [project]
-name = "simple-app-in-pyside6"
+name = "runpod-pod-manager"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "pyside6>=6.10.2",
+    "requests",
     "runpod",
+    "streamlit",
 ]
-
-[dependency-groups]
-dev = ["pyinstaller"]
